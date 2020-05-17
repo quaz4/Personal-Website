@@ -1,0 +1,15 @@
+.timeline-entry {
+    // border-left: solid 5px #0676fb;
+    border-left: solid 5px gray;
+    padding-left: 25px;
+
+    .point {
+        position: relative;
+        left: -40px;
+        top: 25px;
+    }
+
+    p {
+        margin: 0;
+    }
+}
