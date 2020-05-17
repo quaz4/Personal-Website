@@ -1,9 +1,9 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Personal-Website": {
+    "personal-website": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Personal-Website",
+            "outputPath": "dist/personal-website",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Personal-Website:build"
+            "browserTarget": "personal-website:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Personal-Website:build:production"
+              "browserTarget": "personal-website:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Personal-Website:build"
+            "browserTarget": "personal-website:build"
           }
         },
         "test": {
@@ -114,15 +114,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Personal-Website:serve"
+            "devServerTarget": "personal-website:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Personal-Website:serve:production"
+              "devServerTarget": "personal-website:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "Personal-Website"
+    }
+  },
+  "defaultProject": "personal-website",
+  "cli": {
+    "analytics": "bdd7c5ce-9a6d-4e94-b35d-d6d00d74ef31"
+  }
 }
