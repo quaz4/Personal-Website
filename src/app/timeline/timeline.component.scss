@@ -1,3 +1,19 @@
+.pink {
+    height: 20px;
+    background-color: #e24781;
+}
+
+.gold {
+    height: 20px;
+    background-color: #e9ba2e;
+}
+
 section {
-    margin: 0 15% 0 15%;
+    background-color: #213282;
+    padding: 50px;
+
+    .content {
+        max-width: 900px;
+        margin: auto;
+    }
 }

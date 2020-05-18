@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HeroComponent } from './hero/hero.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { TimelineEntryComponent } from './timeline/timeline-entry/timeline-entry.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroComponent,
     TimelineComponent,
-    TimelineEntryComponent
+    TimelineEntryComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

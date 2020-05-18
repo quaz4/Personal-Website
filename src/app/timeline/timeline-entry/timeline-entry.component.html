@@ -1,4 +1,4 @@
-<div class="timeline-entry">
+<!-- <div class="timeline-entry">
     <svg class="point" width="25" height="25">
         <rect width="25" height="25" style="fill:#0676fb;"/>
     </svg> 
@@ -9,4 +9,12 @@
     <div class="body">
         <p>{{data.description}}</p>
     </div>
-</div>
+</div> -->
+
+<details class="timeline-entry">
+    <summary class="title">
+        <img (src)="data.logo" alt="Logo">
+        <h3>{{data.title}}</h3>
+    </summary>
+    <p>{{data.description}}</p>
+</details> 
