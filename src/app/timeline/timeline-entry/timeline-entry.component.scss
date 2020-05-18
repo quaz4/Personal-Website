@@ -1,15 +1,27 @@
 .timeline-entry {
-    // border-left: solid 5px #0676fb;
-    border-left: solid 5px gray;
-    padding-left: 25px;
+    // border-left: solid 6px white;
+    border-left: solid 6px #e9ba2e;
+    padding-left: 30px;
+    // background-color: lighten(#211d80, 20%);
+    
+    .content {
+        background-color: white;
+        padding: 25px;
+    }
 
     .point {
         position: relative;
-        left: -40px;
-        top: 25px;
+        left: -43px;
+        top: 30px;
     }
 
     p, h3 {
         margin: 0;
+        color: black;
+    }
+
+    img {
+        height: 32px;
+        width: auto;
     }
 }
