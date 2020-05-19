@@ -7,6 +7,7 @@ import { HeroComponent } from './hero/hero.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { TimelineEntryComponent } from './timeline/timeline-entry/timeline-entry.component';
 import { AboutComponent } from './about/about.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AboutComponent } from './about/about.component';
     HeroComponent,
     TimelineComponent,
     TimelineEntryComponent,
-    AboutComponent
+    AboutComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

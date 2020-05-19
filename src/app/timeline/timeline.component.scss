@@ -18,6 +18,9 @@ section {
     }
 
     h2 {
-        text-decoration: underline 5px solid #e9ba2e;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-decoration-color: #e0bd2a;
+        text-decoration-thickness: 5px;
     }
 }

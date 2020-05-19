@@ -5,7 +5,10 @@
 
     h2 {
         color: black;
-        text-decoration: underline solid 5px #e9ba2e;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-decoration-color: #e0bd2a;
+        text-decoration-thickness: 5px;
     }
 }
 
