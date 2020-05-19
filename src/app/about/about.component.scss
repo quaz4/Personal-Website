@@ -3,7 +3,10 @@
     max-width: 900px;
     margin: auto;
 
-    h2 { color: black; }
+    h2 {
+        color: black;
+        text-decoration: underline solid 5px #e9ba2e;
+    }
 }
 
 // .container {
