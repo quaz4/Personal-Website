@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { TimelineService } from '../services/timeline.service';
 import { TimelineEntry } from '../models/TimelineEntry';
 
@@ -9,14 +9,14 @@ import { TimelineEntry } from '../models/TimelineEntry';
 })
 export class TimelineComponent implements OnInit {
 
-  public entries: TimelineEntry[];
+  @Input() theme: string;
+  @Input() title: string;
+  @Input() entries: TimelineEntry[];
 
-  constructor(public timeLine: TimelineService) {
-    this.entries = this.timeLine.getAll();
+  constructor() {
   }
 
   ngOnInit(): void {
-    console.table(this.timeLine.getAll());
   }
 
 }

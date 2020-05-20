@@ -8,7 +8,15 @@ export class TimelineService {
 
   constructor() { }
 
-  getAll() {
+  getExperience() {
+    return data;
+  }
+
+  getProjects() {
+    return data;
+  }
+
+  getCerts() {
     return data;
   }
 }

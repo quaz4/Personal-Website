@@ -1,8 +1,20 @@
+@import "../../../../src/variables.scss";
+
 .timeline-entry {
-    // border-left: solid 6px white;
-    border-left: solid 6px #e9ba2e;
-    // padding-left: 30px;
-    // background-color: lighten(#211d80, 20%);
+
+    &.primary {
+        border-color: $secondary;
+    }
+
+    &.secondary {
+        border-color: $tertiary;
+    }
+
+    &.tertiary {
+        border-color: $secondary;
+    }
+
+    border-left: solid 6px $secondary;
     margin-bottom: 25px;
     
     .content {

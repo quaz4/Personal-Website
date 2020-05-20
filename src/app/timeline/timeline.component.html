@@ -1,6 +1,6 @@
-<section id="timeline">
+<section [ngClass]="theme">
     <div class="content">
-        <h2>Experience</h2>
-        <app-timeline-entry *ngFor="let entry of entries" [data]=entry></app-timeline-entry>
+        <h2>{{title}}</h2>
+        <app-timeline-entry *ngFor="let entry of entries" [theme]="theme" [data]=entry></app-timeline-entry>
     </div>
 </section>

@@ -1,6 +1,6 @@
 <svg width="297" height="1440" xmlns="http://www.w3.org/2000/svg" stroke="null" style="vector-effect: non-scaling-stroke;">
  <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
-
+<use style="--color_fill: #000;"></use>
  <g stroke="null">
   <title stroke="null">background</title>
   <rect stroke="null" x="-1" y="-1" width="299" height="1442" id="canvas_background" fill="none"/>

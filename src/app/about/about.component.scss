@@ -5,10 +5,18 @@
 
     h2 {
         color: black;
-        text-decoration-line: underline;
-        text-decoration-style: solid;
-        text-decoration-color: #e0bd2a;
-        text-decoration-thickness: 5px;
+
+        @supports (text-decoration-thickness: 5px) {
+            text-decoration-line: underline;
+            text-decoration-style: solid;
+            text-decoration-color: #e0bd2a;
+            text-decoration-thickness: 5px;
+        }
+
+        @supports not (text-decoration-thickness: 5px) {
+            display: inline-block;
+            border-bottom: solid 5px #e0bd2a;
+        }
     }
 }
 

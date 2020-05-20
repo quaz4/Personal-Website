@@ -1,15 +1,62 @@
+@import "../../variables.scss";
+
 .pink {
     height: 20px;
-    background-color: #e24781;
+    background-color: $tertiary;
 }
 
 .gold {
     height: 20px;
-    background-color: #e9ba2e;
+    background-color: $secondary;
+}
+
+.primary {
+    background-color: $primary;
+
+    h2 {
+        @supports (text-decoration-thickness: 5px) {
+            text-decoration-color: $secondary;
+        }
+
+        @supports not (text-decoration-thickness: 5px) {
+            border-color: $secondary;
+        }
+    }
+}
+
+.secondary {
+    background-color: $secondary;
+
+    h2 {
+        color: black;
+
+        @supports (text-decoration-thickness: 5px) {
+            text-decoration-color: $tertiary;
+        }
+
+        @supports not (text-decoration-thickness: 5px) {
+            border-color: $tertiary;
+        }
+    }
+}
+
+.tertiary {
+    background-color: $tertiary;
+
+    h2 {
+        @supports (text-decoration-thickness: 5px) {
+            text-decoration-color: $secondary;
+        }
+
+        @supports not (text-decoration-thickness: 5px) {
+            border-color: $secondary;
+        }
+    }
 }
 
 section {
-    background-color: #e24781;
+
+    background-color: $tertiary;
     padding: 50px;
 
     .content {
@@ -18,9 +65,16 @@ section {
     }
 
     h2 {
-        text-decoration-line: underline;
-        text-decoration-style: solid;
-        text-decoration-color: #e0bd2a;
-        text-decoration-thickness: 5px;
+        @supports (text-decoration-thickness: 5px) {
+            text-decoration-line: underline;
+            text-decoration-style: solid;
+            text-decoration-color: $secondary;
+            text-decoration-thickness: 5px;
+        }
+
+        @supports not (text-decoration-thickness: 5px) {
+            display: inline-block;
+            border-bottom: solid 5px $secondary;
+        }
     }
 }

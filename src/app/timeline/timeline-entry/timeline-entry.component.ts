@@ -9,8 +9,15 @@ import { TimelineEntry } from 'src/app/models/TimelineEntry';
 export class TimelineEntryComponent implements OnInit {
 
   @Input() data: TimelineEntry;
+  @Input() theme: string;
 
   constructor() { }
+
+  get timeString() {
+    if (!this.data.end) {
+      return `${this.data.start} - Present`;
+    }
+  }
 
   ngOnInit(): void {
   }

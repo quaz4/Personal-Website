@@ -1,21 +1,23 @@
+@import "../../variables.scss";
+
 .pink {
     height: 20px;
-    background-color: #d84580;
+    background-color: $tertiary;
 }
 
 .gold {
     height: 20px;
-    background-color: #e0bd2a;
+    background-color: $secondary;
 }
 
 .blue {
     height: 20px;
-    background-color: #211d80;
+    background-color: $primary;
 }
 
 .content {
     text-align: center;
-    background-color: #211d80;
+    background-color: $primary;
     color: white;
 
     p { margin: 0; }
