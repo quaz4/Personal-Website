@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { TimelineEntry } from 'src/app/models/TimelineEntry';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-timeline-entry',
@@ -14,15 +15,42 @@ export class TimelineEntryComponent implements OnInit {
   constructor() { }
 
   get timeString(): string {
+    const start = moment(this.data.start);
+
+    let end;
+
     if (!this.data.end) {
-      const deltaT = Math.floor(Date.now() / 1000) - Math.floor(this.data.start.getTime() / 1000);
+      end = moment(Date.now());
     } else {
-      const deltaT = Math.floor(this.data.end.getTime() / 1000) - Math.floor(this.data.start.getTime() / 1000);
+      end = moment(this.data.end);
     }
 
-    // if (deltaT < )
+    const diffInMilliSeconds = end.diff(start);
 
-    return '';
+    const duration = moment.duration(diffInMilliSeconds);
+
+    const years = duration.years();
+    const months = duration.months();
+
+    let rVal = '';
+
+    if (years === 1) {
+      rVal = rVal + '1 year';
+    } else if (years > 1) {
+      rVal = rVal + years + ' years';
+    }
+
+    if (years > 0) {
+      rVal = rVal + ', ';
+    }
+
+    if (months === 1) {
+      rVal = rVal + '1 month';
+    } else if (months > 1) {
+      rVal = rVal + months + ' months';
+    }
+
+    return rVal;
   }
 
   ngOnInit(): void {

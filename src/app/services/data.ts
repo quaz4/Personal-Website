@@ -7,14 +7,15 @@ export const data: TimelineEntry[] = [
         // tslint:disable-next-line: max-line-length
         description: 'The Bankwest graduate program consists of 4, 6 month roatations in different teams around the bank. I am currently in my first rotation, where I have been using angularjs, Angular 5, Oracle databases, and .NET based APIs to maintain internal bank tools. So far I have received ongoing training in secure programming practices, with further training to come.',
         logo: '/assets/bankwest.png',
-        start: new Date(),
+        start: new Date('2020/02/17')
     },
     {
         title: 'Curtin University',
         // tslint:disable-next-line: max-line-length
         description: 'Bachelor of Science, computing. I completed my computing degree at the end of 2019, having excelled at my industry units and receiving a letter of academic excellence. I gained knowledge of advanced computing concepts in both theory and practice.',
         logo: '/assets/curtin.jpg',
-        start: new Date(),
+        start: new Date('2015/03/01'),
+        end: new Date('2019/12/01')
     },
     {
         title: 'Scotch College',

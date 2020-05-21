@@ -3,9 +3,11 @@
         <div class="title">
             <img [src]="data.logo" alt="Logo">
             <h3>{{data.title}}</h3>
-            <div *ngIf="data.end; then finished else ongoing"></div>
-            <ng-template #ongoing><p>{{data.start | date:'MMM yyy'}} - Present</p></ng-template>
-            <ng-template #finished><p>{{data.start | date:'MMM yyy'}} - {{data.end | date:'MMM yyy'}}</p></ng-template>
+            <div *ngIf="data.duration">
+                <div *ngIf="data.end; then finished else ongoing"></div>
+                <ng-template #ongoing><p>{{data.start | date:'MMM yyy'}} - Present | {{ timeString }}</p></ng-template>
+                <ng-template #finished><p>{{data.start | date:'MMM yyy'}} - {{data.end | date:'MMM yyy'}} | {{ timeString }}</p></ng-template>
+            </div>
         </div>
         <br>
         <div class="body">
