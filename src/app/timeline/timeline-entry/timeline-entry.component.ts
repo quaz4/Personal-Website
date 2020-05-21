@@ -13,10 +13,16 @@ export class TimelineEntryComponent implements OnInit {
 
   constructor() { }
 
-  get timeString() {
+  get timeString(): string {
     if (!this.data.end) {
-      return `${this.data.start} - Present`;
+      const deltaT = Math.floor(Date.now() / 1000) - Math.floor(this.data.start.getTime() / 1000);
+    } else {
+      const deltaT = Math.floor(this.data.end.getTime() / 1000) - Math.floor(this.data.start.getTime() / 1000);
     }
+
+    // if (deltaT < )
+
+    return '';
   }
 
   ngOnInit(): void {
