@@ -20,18 +20,8 @@
     }
 }
 
-// .container {
-//     display: flex;
-
-//     .pink {
-//         background-color: #e24781;
-//         height: 35px;
-//         flex: 1.4;
-//     }
-
-//     .gold {
-//         background-color: #e9ba2e;
-//         height: 35px;
-//         flex: 1;
-//     }
-// }
+@media (max-width: 900px) {
+    .about {
+        padding: 25px 25px;
+    }
+}
