@@ -7,5 +7,5 @@ export interface TimelineEntry {
     'logo'?: string;
     'links'?: string[];
     'images'?: string[];
-    'duration'?: boolean;
+    'event'?: boolean;
 }
