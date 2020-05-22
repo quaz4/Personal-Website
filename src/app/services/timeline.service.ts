@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { data } from './data.js';
+import { experience, projects, certs } from './data.js';
 
 @Injectable({
   providedIn: 'root'
@@ -9,14 +9,14 @@ export class TimelineService {
   constructor() { }
 
   getExperience() {
-    return data;
+    return experience;
   }
 
   getProjects() {
-    return data;
+    return projects;
   }
 
   getCerts() {
-    return data;
+    return certs;
   }
 }
