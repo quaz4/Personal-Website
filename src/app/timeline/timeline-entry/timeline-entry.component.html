@@ -1,11 +1,11 @@
 <div class="timeline-entry" [ngClass]="theme">
     <div class="content">
         <div class="title">
-            <img [src]="data.logo" alt="Logo">
+            <img [src]="data.logo" alt="Logo" loading="lazy">
             <h3>{{data.title}}</h3>
             <div *ngIf="data.event"><p>{{data.start | date:'MMM yyy'}}</p></div>
-            <div *ngIf="!data.event && !data.end"><p>{{data.start | date:'MMM yyy'}} - Present | {{ timeString }}</p></div>
-            <div *ngIf="!data.event && data.end"><p>{{data.start | date:'MMM yyy'}} - {{data.end | date:'MMM yyy'}} | {{ timeString }}</p></div>
+            <div *ngIf="!data.event && !data.end"><p>{{data.start | date:'MMM yyy'}} - Present | {{ timeString() }}</p></div>
+            <div *ngIf="!data.event && data.end"><p>{{data.start | date:'MMM yyy'}} - {{data.end | date:'MMM yyy'}} | {{ timeString() }}</p></div>
             <div *ngIf="!data.event && data.employmentType"><p>{{data.employmentType}}</p></div>
         </div>
 

@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { TimelineEntry } from 'src/app/models/TimelineEntry';
-import * as moment from 'moment';
+import * as humanizeDuration from 'humanize-duration';
 
 @Component({
   selector: 'app-timeline-entry',
@@ -14,43 +14,17 @@ export class TimelineEntryComponent implements OnInit {
 
   constructor() { }
 
-  get timeString(): string {
-    const start = moment(this.data.start);
-
-    let end;
+  timeString(): string {
+    let end: number;
 
     if (!this.data.end) {
-      end = moment(Date.now());
+      end = Date.now();
     } else {
-      end = moment(this.data.end);
+      end = this.data.end.getTime();
+
     }
 
-    const diffInMilliSeconds = end.diff(start);
-
-    const duration = moment.duration(diffInMilliSeconds);
-
-    const years = duration.years();
-    const months = duration.months();
-
-    let rVal = '';
-
-    if (years === 1) {
-      rVal = rVal + '1 year';
-    } else if (years > 1) {
-      rVal = rVal + years + ' years';
-    }
-
-    if (years > 0) {
-      rVal = rVal + ', ';
-    }
-
-    if (months === 1) {
-      rVal = rVal + '1 month';
-    } else if (months > 1) {
-      rVal = rVal + months + ' months';
-    }
-
-    return rVal;
+    return humanizeDuration(end - (this.data.start.getTime()), { units: ['y', 'mo'], round: true });
   }
 
   ngOnInit(): void {
