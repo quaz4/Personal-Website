@@ -37,7 +37,7 @@ export const experience: TimelineEntry[] = [
         end: new Date('2019-02-01')
     },
     {
-        title: '1Degree- Scotch College',
+        title: '1Degree - Scotch College',
         employmentType: 'Casual',
         // tslint:disable-next-line: max-line-length
         description: 'IT support at Scotch College in Perth. I helped Staff and Students with any IT device or service provided by the school, liaising with higher level technical staff if required. I also spent a lot of time documenting processes at the school, writing documents for both IT staff and the general community, adjusting my language accordingly. I left my position at Scotch at the end of 2017 to move to New Zealand to live with my partner.',
