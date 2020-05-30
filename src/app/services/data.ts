@@ -6,7 +6,7 @@ export const experience: TimelineEntry[] = [
         employmentType: 'Full-time',
         // tslint:disable-next-line: max-line-length
         description: 'The Bankwest graduate program consists of 4, 6 month roatations in different teams around the bank. I am currently in my first rotation, where I have been using angularjs, Angular 5, Oracle databases, and .NET based APIs to maintain internal bank tools. So far I have received ongoing training in secure programming practices, with further training to come.',
-        logo: '/assets/bankwest.webp',
+        logo: '/assets/bankwest.png',
         start: new Date('2020/02/17')
     },
     {
@@ -32,7 +32,7 @@ export const experience: TimelineEntry[] = [
         employmentType: 'Full-time',
         // tslint:disable-next-line: max-line-length
         description: 'Working remotely, I built an exchange from the ground up using Angular 6 for the front-end and backend using typescript and node.js. The backend consisted of user account management, a crypto payments system I built and a matching engine for resolving the trades. I also built an ICO platform using ejs, UIKit and node. ',
-        logo: '/assets/australis.webp',
+        logo: '/assets/australis.png',
         start: new Date('2018-02-01'),
         end: new Date('2019-02-01')
     },

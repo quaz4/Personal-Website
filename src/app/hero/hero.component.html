@@ -12,16 +12,17 @@
             <img src="/assets/wave.svg" alt="">
         </div>
         <!-- <img class="photo" src="/assets/will.webp" alt="A photo of Will smiling"> -->
-        
-        <img class="photo"
-            srcset="
-                /assets/will/will_1400.webp 1400w,
-                /assets/will/will_1075.webp 1075w,
-                /assets/will/will_480.webp 480w
-            "
-            src="/assets/will/will_1400.webp"
-            alt="A photo of Will smiling"
-        >
 
+        <picture>
+            <source srcset="
+                        /assets/will/will_1400.webp 1400w,
+                        /assets/will/will_1075.webp 1075w,
+                        /assets/will/will_480.webp 480w">
+            <img src="/assets/will/will_1400.jp2" alt="lighthouse"
+                 srcset="
+                    /assets/will/will_1400.jp2 1400w,
+                    /assets/will/will_1075.jp2 1075w,
+                    /assets/will/will_480.jp2 480w">
+          </picture>
     </div>
 </section>
