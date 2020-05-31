@@ -12,11 +12,29 @@
             <img src="/assets/wave.svg" alt="">
         </div>
 
-        <img class="photo" src="/assets/will/will_1400.png" alt="A picture of Will smiling"
+        <!-- <img class="photo" src="/assets/will/will_1400.png" alt="A picture of Will smiling"
                 srcset="
                 /assets/will/will_1400.png 1400w,
                 /assets/will/will_1075.png 1075w,
                 /assets/will/will_480.png 480w"
-        >
+        > -->
+
+        <picture>
+            <source
+                srcset="
+                    /assets/will/will_1400.webp 1400w,
+                    /assets/will/will_1075.webp 1075w,
+                    /assets/will/will_480.webp 480w"
+                type="image/webp"
+            >
+            <source
+                srcset="
+                    /assets/will/will_1400.png 1400w,
+                    /assets/will/will_1075.png 1075w,
+                    /assets/will/will_480.png 480w"
+                type="image/png"
+            >
+            <img src="/assets/will/will_1400.png" alt="A photo of Will smiling">
+        </picture>
     </div>
 </section>
