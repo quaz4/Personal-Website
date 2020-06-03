@@ -37,4 +37,11 @@
         height: 32px;
         width: auto;
     }
+
+    .links {
+        a {
+            display: inline;
+            padding-right: 15px;
+        }
+    }
 }

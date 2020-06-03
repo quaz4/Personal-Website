@@ -63,7 +63,17 @@ export const projects: TimelineEntry[] = [
         description: 'I built No-eu for a bit of practice with building custom express middleware. It basically redirects all requests originating from countries in the EU to a page you specify. I had the idea around the time GDPR was in the news and some companies said they would just block all EU traffic instead of attempting to comply, so I thought it could be a fun challenge. It\'s all open source and open for anyone to use through NPM.',
         logo: '/assets/no-eu.png',
         start: new Date('2018/11/19'),
-        event: true
+        event: true,
+        links: [
+            {
+                text: 'Code',
+                url: 'https://github.com/quaz4/no-eu'
+            },
+            {
+                text: 'npm',
+                url: 'https://www.npmjs.com/package/no-eu'
+            }
+        ]
     },
     {
         title: 'Yaft - Ionic App',
@@ -71,7 +81,17 @@ export const projects: TimelineEntry[] = [
         description: 'Yaft is an app I created to fill a gap in the workout management tools available. It was designed to be similar to trello lists and make planning a workout simple. I built it using the Ionic 3 framework, using Typescript, HTML, SCSS and Angular.',
         logo: '/assets/yaft-cut.png',
         start: new Date('2017-12-31'),
-        event: true
+        event: true,
+        links: [
+            {
+                text: 'Code',
+                url: 'https://github.com/quaz4/Yaft'
+            },
+            {
+                text: 'Play Store',
+                url: 'https://play.google.com/store/apps/details?id=art.willstew.yaft'
+            }
+        ]
     },
 ];
 
@@ -82,8 +102,7 @@ export const certs: TimelineEntry[] = [
         description: 'Bachelor of Science, computing. I completed my computing degree at the end of 2019, having excelled at my industry units and receiving a letter of academic excellence. I gained knowledge of advanced computing concepts in both theory and practice. I took a break from my studies in 2018 to work full time as a software engineer while living in New Zealand, a decision I believe to be one of my best.',
         logo: '/assets/curtin.jpg',
         start: new Date('2015/03/01'),
-        end: new Date('2019/12/01'),
-        // event: true
+        end: new Date('2019/12/01')
     },
     {
         title: 'Letter of Academic Excellence - Curtin University',

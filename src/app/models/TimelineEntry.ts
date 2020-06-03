@@ -5,7 +5,12 @@ export interface TimelineEntry {
     'start'?: Date;
     'end'?: Date;
     'logo'?: string;
-    'links'?: string[];
+    'links'?: Link[];
     'images'?: string[];
     'event'?: boolean;
+}
+
+interface Link {
+    url: string;
+    text: string;
 }
