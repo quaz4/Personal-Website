@@ -9,16 +9,16 @@
             <div *ngIf="!data.event && data.employmentType"><p>{{data.employmentType}}</p></div>
         </div>
 
-        <br>
-
         <div class="body">
             <p>{{data.description}}</p>
         </div>
 
-        <br>
-
-        <div class="links">
+        <div class="links" *ngIf="data.links">
             <a *ngFor="let link of data.links" [href]="link.url" target="_blank">{{link.text}}</a>
+        </div>
+
+        <div class="images" *ngIf="data.images">
+            <img *ngFor="let image of data.images; let i=index" [src]="image.thumb" (click)="open(i)" [alt]="image.caption" />
         </div>
     </div>
 

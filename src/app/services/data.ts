@@ -34,7 +34,24 @@ export const experience: TimelineEntry[] = [
         description: 'Working remotely, I built an exchange from the ground up using Angular 6 for the front-end and backend using typescript and node.js. The backend consisted of user account management, a crypto payments system I built and a matching engine for resolving the trades. I also built an ICO platform using ejs, UIKit and node. ',
         logo: '/assets/australis.png',
         start: new Date('2018-02-01'),
-        end: new Date('2019-02-01')
+        end: new Date('2019-02-01'),
+        images: [
+            {
+                src: '/assets/australis-ico.png',
+                thumb: '/assets/australis-ico-thumb.png',
+                caption: 'One of the websites I designed and build for Australis'
+            },
+            {
+                src: '/assets/exchange-1.jpg',
+                thumb: '/assets/exchange-1-thumb.png',
+                caption: 'Intermediate exchange on australis.io'
+            },
+            {
+                src: '/assets/exchange-2.jpg',
+                thumb: '/assets/exchange-2-thumb.png',
+                caption: 'Basic exchange on australis.io'
+            }
+        ]
     },
     {
         title: '1Degree - Scotch College',
@@ -90,6 +107,13 @@ export const projects: TimelineEntry[] = [
             {
                 text: 'Play Store',
                 url: 'https://play.google.com/store/apps/details?id=art.willstew.yaft'
+            }
+        ],
+        images: [
+            {
+                src: '/assets/yaft.png',
+                thumb: '/assets/yaft-thumb.png',
+                caption: 'A screenshot of the yaft app'
             }
         ]
     },

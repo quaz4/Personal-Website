@@ -6,11 +6,17 @@ export interface TimelineEntry {
     'end'?: Date;
     'logo'?: string;
     'links'?: Link[];
-    'images'?: string[];
+    'images'?: Image[];
     'event'?: boolean;
 }
 
 interface Link {
     url: string;
     text: string;
+}
+
+interface Image {
+    src: string;
+    thumb: string;
+    caption: string;
 }
