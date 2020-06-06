@@ -14,7 +14,7 @@
         </div>
 
         <div class="links" *ngIf="data.links">
-            <a *ngFor="let link of data.links" [href]="link.url" target="_blank">{{link.text}}</a>
+            <a *ngFor="let link of data.links" [href]="link.url" target="_blank" rel="noopener noreferrer">{{link.text}}</a>
         </div>
 
         <div class="images" *ngIf="data.images">
