@@ -18,6 +18,15 @@
             border-bottom: solid 5px #e0bd2a;
         }
     }
+
+    .social-links {
+        display: flex;
+        flex-wrap: wrap;
+        
+        a {
+            padding-right: 15px;
+        }
+    }
 }
 
 @media (max-width: 900px) {
