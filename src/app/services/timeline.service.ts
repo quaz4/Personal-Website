@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { experience, projects, certs } from './data.js';
+import { experience, projects, certs } from './data';
 
 @Injectable({
   providedIn: 'root'
