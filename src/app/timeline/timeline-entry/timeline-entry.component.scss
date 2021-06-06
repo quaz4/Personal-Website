@@ -1,6 +1,8 @@
 @import "../../../../src/variables.scss";
 
 .timeline-entry {
+    background-color: white;
+    padding: 25px;
 
     &.primary {
         border-color: $secondary;
@@ -22,11 +24,6 @@
             height: 32px;
             width: auto;
         }
-    }
-
-    .content {
-        background-color: white;
-        padding: 25px;
     }
 
     .body {

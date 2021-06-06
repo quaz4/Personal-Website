@@ -1,24 +1,21 @@
 @import "../../variables.scss";
 
-.pink {
-    height: 20px;
-    background-color: $tertiary;
-}
-
-.gold {
-    height: 20px;
-    background-color: $secondary;
-}
-
-.blue {
-    height: 20px;
-    background-color: $primary;
-}
-
-.content {
+footer {
     text-align: center;
     background-color: $primary;
     color: white;
 
     p { margin: 0; }
+
+    .pink {
+        background-color: $tertiary;
+    }
+    
+    .gold {
+        background-color: $secondary;
+    }
+    
+    .blue {
+        background-color: $primary;
+    }
 }

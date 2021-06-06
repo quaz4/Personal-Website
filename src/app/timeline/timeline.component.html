@@ -1,6 +1,8 @@
 <section [ngClass]="theme">
     <div class="content">
         <h2>{{title}}</h2>
-        <app-timeline-entry *ngFor="let entry of entries" [theme]="theme" [data]=entry></app-timeline-entry>
+        <ul>
+            <app-timeline-entry *ngFor="let entry of entries" [theme]="theme" [data]=entry></app-timeline-entry>
+        </ul>
     </div>
 </section>
