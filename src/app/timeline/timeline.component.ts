@@ -1,5 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { TimelineService } from '../services/timeline.service';
+import { Component, Input } from '@angular/core';
 import { TimelineEntry } from '../models/TimelineEntry';
 
 @Component({
@@ -7,16 +6,13 @@ import { TimelineEntry } from '../models/TimelineEntry';
   templateUrl: './timeline.component.html',
   styleUrls: ['./timeline.component.scss']
 })
-export class TimelineComponent implements OnInit {
+export class TimelineComponent {
 
   @Input() theme: string;
   @Input() title: string;
   @Input() entries: TimelineEntry[];
 
   constructor() {
-  }
-
-  ngOnInit(): void {
   }
 
 }

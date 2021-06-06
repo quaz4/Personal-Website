@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { TimelineEntry } from 'src/app/models/TimelineEntry';
 import * as humanizeDuration from 'humanize-duration';
 import { Lightbox } from 'ngx-lightbox';
@@ -8,7 +8,7 @@ import { Lightbox } from 'ngx-lightbox';
   templateUrl: './timeline-entry.component.html',
   styleUrls: ['./timeline-entry.component.scss']
 })
-export class TimelineEntryComponent implements OnInit {
+export class TimelineEntryComponent {
 
   @Input() data: TimelineEntry;
   @Input() theme: string;
@@ -35,9 +35,6 @@ export class TimelineEntryComponent implements OnInit {
 
   close(): void {
     this.lightbox.close();
-  }
-
-  ngOnInit(): void {
   }
 
 }
