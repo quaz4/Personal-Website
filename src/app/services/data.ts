@@ -13,7 +13,7 @@ export const experience: TimelineEntry[] = [
         title: 'Graduate Developer - Bankwest',
         employmentType: 'Full-time',
         // tslint:disable-next-line: max-line-length
-        description: 'The Bankwest graduate program consists of 4, 6 month roatations in different teams around the bank. I am currently in my first rotation, where I have been using angularjs, Angular 5, Oracle databases, and .NET based APIs to maintain internal bank tools. So far I have received ongoing training in secure programming practices, with further training to come.',
+        description: 'Rotation 1: I worked with Angular, AngularJS and C# to improve and support both internal and external web apps used by brokers and colleagues around Australia. Rotation 2: I worked on uplifting an old Java Applet codebase, helping to migrate it to javascript. Rotation 3: Worked on the new home loan platform, helping to expand its capabilities. Worked in Angular and Java.',
         logo: '/assets/bankwest.png',
         start: new Date('2020/02/17'),
         end: new Date('2021/04/01')
